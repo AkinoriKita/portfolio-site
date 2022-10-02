@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import HomeHeader from '@/components/organisms/HomeHeader.vue'
+import HomeAbout from '@/components/organisms/HomeAbout.vue'
+import HomeSkills from '@/components/organisms/HomeSkills.vue'
+import HomeProducts from '@/components/organisms/HomeProducts.vue'
+import HomeFooter from '@/components/organisms/HomeFooter.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +13,14 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    components: {
+      default: HomeView,
+      header: HomeHeader,
+      about: HomeAbout,
+      skills: HomeSkills,
+      products: HomeProducts,
+      footer: HomeFooter,
+    }
   },
   {
     path: '/about',
