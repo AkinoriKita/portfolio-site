@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="dark"
       dark
     >
       <div class="d-flex align-center">
@@ -38,7 +38,12 @@
     </v-app-bar>
 
     <v-main>
-      <router-view/>
+      <!-- <router-view/> -->
+      <router-view name="header" class="ma-16"/>
+      <router-view name="about" class="ma-16"/>
+      <router-view name="skills" class="ma-16"/>
+      <router-view name="products" class="ma-16"/>
+      <router-view name="footer"/>
     </v-main>
   </v-app>
 </template>
