@@ -1,7 +1,8 @@
 <template>
   <div class="b-color">
-    <v-container>
-      <p class="text-h3 text-center">Products</p>
+    <v-container class="mt-16 mb-16">
+      <p class="text-h3 text-center">WORKS</p>
+      <p class="text-h6 text-center mb-16">制作したもの</p>
       <product-card :products="products"></product-card>
     </v-container>
   </div>
@@ -17,8 +18,8 @@ export default {
         {
           id: 1,
           title: 'ECサイト',
-          img: '',
-          description: 'ユーザ側と管理者側のマルチログイン機能付きECサイトです。ログイン機能はJetstream、カート機能はStripeで実装しました。',
+          img: require('@/assets/laravelec.jpg'),
+          description: 'ユーザ側と管理者側のマルチログイン機能付きECサイトです。',
           url: 'https://laravelec.kitaakinori.com/',
           langs: [
             'Laravel8',
@@ -27,15 +28,14 @@ export default {
           ],
           period: '約2週間',
           github: 'https://github.com/AkinoriKita/laravel_ec',
-          modalTitle: '',
-          modalImage: '',
-          modalText: '',
+          route: 'shop',
+       
         },
         {
           id: 2,
-          title: 'コーポレートサイト',
-          img: '',
-          description: '架空のカフェのコーポレートサイトです。フォームにてPHPでのDB接続を行っています。',
+          title: '架空のCafeサイト',
+          img: require('@/assets/cafe/top.png'),
+          description: '架空のカフェのコーポレートサイトです。',
           url: 'https://cafe.kitaakinori.com/',
           langs: [
             'HTML',
@@ -47,25 +47,22 @@ export default {
           ],
           period: '約1週間',
           github: 'https://github.com/AkinoriKita/cafe',
-          modalTitle: '架空のカフェのコーポレートサイトです。フォームにてPHPでのDB接続を行っています。',
-          modalImage: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
-          modalText: '架空のカフェのコーポレートサイトです。フォームにてPHPでのDB接続を行っています。',
+          route: 'cafe',
         },
         {
           id: 3,
           title: 'ポートフォリオサイト',
-          img: '',
+          img: require('@/assets/portfolio.jpg'),
           description: '当ポートフォリオサイトです。',
           url: '',
           langs: [
             'Vue2',
+            'VueRouter',
             'Vuetify'
           ],
-          period: '約2日',
+          period: '約3日',
           github: 'https://github.com/AkinoriKita/portfolio-site',
-          modalTitle: '',
-          modalImage: '',
-          modalText: '',
+          route: 'portfolio',
         },
       ]
     }
@@ -76,7 +73,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .b-color {
   background-color: #e7ecec;
 }

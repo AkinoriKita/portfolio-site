@@ -3,9 +3,9 @@
     <v-row justify="center">
       <div v-for="product in products" :key="product.id">
         <v-col cols=12>
-          <v-card elevation="2" max-width="300">
+          <v-card elevation="2" max-width="500">
             <a :href="product.url">
-              <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+              <v-img height="250" :src="product.img"></v-img>
             </a>
             <v-card-title>{{ product.title }}</v-card-title>
             <v-card-text class="black--text text--darken-4">
@@ -16,35 +16,9 @@
               {{ product.period }}
             </v-card-text>
             <v-card-text>
-              <v-btn class="mr-6" elevation="2" :href="product.github" target="_blank">GitHub</v-btn>
-
-              <v-dialog :retain-focus="false" v-model="dialog" width="500">
-                <template v-slot:activator="{ on, attrs }">
-                  <v-btn v-bind="attrs" v-on.stop="on">
-                    作品のポイント
-                  </v-btn>
-                </template>
-
-                <v-card>
-
-                  <v-card-title class="text-h5">
-                    {{ product.modalTitle }}
-                  </v-card-title>
-                  <v-img class="mb-4" :src="product.modalImage"></v-img>
-                  <v-card-text class="black--text text--darken-4">
-                    {{ product.modalText }}
-                  </v-card-text>
-
-                  <v-divider></v-divider>
-
-                  <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn color="primary" text @click="dialog = false">
-                      閉じる
-                    </v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-dialog>
+              <v-btn class="mr-6" elevation="2" :href="product.url" target="_blank">このサイトへ行く</v-btn>
+              <v-btn :to="product.route" class="mr-6">作品の詳細</v-btn>
+              <v-btn elevation="2" :href="product.github" target="_blank">GitHub</v-btn>
 
             </v-card-text>
             <v-card-text>
@@ -66,7 +40,6 @@ export default {
   name: 'ProductCard',
   data() {
     return {
-      dialog: false,
     }
   },
   props: [
