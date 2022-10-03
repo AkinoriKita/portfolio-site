@@ -1,9 +1,11 @@
 <template>
   <div class="b-color">
     <v-container class="mt-16 mb-16">
+        <v-row justify="center">
       <p class="text-h3 text-center">SKILL</p>
       <p class="text-h6 text-center mb-16">できること</p>
       <skill-card :skills="skills"></skill-card>
+        </v-row>
     </v-container>
   </div>
 </template>

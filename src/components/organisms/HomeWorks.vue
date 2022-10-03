@@ -54,7 +54,7 @@ export default {
           title: 'ポートフォリオサイト',
           img: require('@/assets/portfolio.jpg'),
           description: '当ポートフォリオサイトです。',
-          url: '',
+          url: 'https://kitaakinori.com/',
           langs: [
             'Vue2',
             'VueRouter',

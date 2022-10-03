@@ -1,5 +1,6 @@
 <template>
     <div>
+    <v-container class="mt-16 mb-16">
         <v-row justify="center">
             <div v-for="skill in skills" :key="skill.id">
                 <v-col cols=12>
@@ -18,6 +19,7 @@
                 </v-col>
             </div>
         </v-row>
+    </v-container>
     </div>
 </template>
   
