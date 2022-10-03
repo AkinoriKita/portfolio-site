@@ -5,9 +5,9 @@ import HomeAbout from '@/components/organisms/HomeAbout.vue'
 import HomeSkills from '@/components/organisms/HomeSkills.vue'
 import HomeProducts from '@/components/organisms/HomeWorks.vue'
 import HomeFooter from '@/components/organisms/HomeFooter.vue'
-import WorksShop from '@/components/organisms/WorksShop.vue'
-import WorksCafe from '@/components/organisms/WorksCafe.vue'
-import WorksPortfolio from '@/components/organisms/WorksPortfolio.vue'
+import WorksEC from '@/components/organisms/works/WorksEC.vue'
+import WorksCafe from '@/components/organisms/works/WorksCafe.vue'
+import WorksPortfolio from '@/components/organisms/works/WorksPortfolio.vue'
 
 Vue.use(VueRouter)
 
@@ -34,7 +34,7 @@ const routes = [
   {
     path: '/shop',
     name: 'shop',
-    component: WorksShop
+    component: WorksEC
   },
   {
     path: '/cafe',
@@ -46,6 +46,10 @@ const routes = [
     name: 'portfolio',
     component: WorksPortfolio
   },
+  {
+    path: '*',
+    redirect: '/'
+  }
 ]
 
 const router = new VueRouter({

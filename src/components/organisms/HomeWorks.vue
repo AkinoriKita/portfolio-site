@@ -17,9 +17,9 @@ export default {
       products: [
         {
           id: 1,
-          title: 'Shopサイト',
+          title: 'ECサイト',
           img: require('@/assets/laravelec.jpg'),
-          description: 'ユーザ側と管理者側のマルチログイン機能付きECサイトです。ログイン機能はJetstream、カート機能はStripeで実装しました。',
+          description: 'ユーザ側と管理者側のマルチログイン機能付きECサイトです。',
           url: 'https://laravelec.kitaakinori.com/',
           langs: [
             'Laravel8',
@@ -33,9 +33,9 @@ export default {
         },
         {
           id: 2,
-          title: 'コーポレートサイト',
-          img: require('@/assets/cafe.jpg'),
-          description: '架空のカフェのコーポレートサイトです。フォームにてPHPでのDB接続を行っています。',
+          title: '架空のCafeサイト',
+          img: require('@/assets/cafe/top.png'),
+          description: '架空のカフェのコーポレートサイトです。',
           url: 'https://cafe.kitaakinori.com/',
           langs: [
             'HTML',
@@ -57,6 +57,7 @@ export default {
           url: '',
           langs: [
             'Vue2',
+            'VueRouter',
             'Vuetify'
           ],
           period: '約3日',
@@ -72,7 +73,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .b-color {
   background-color: #e7ecec;
 }

@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .b-color {
   background-color: #ece7ec;
 }

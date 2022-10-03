@@ -16,8 +16,8 @@
               {{ product.period }}
             </v-card-text>
             <v-card-text>
-              <v-btn class="mr-6" elevation="2" :href="product.url" target="_blank">サイトへ行く</v-btn>
-              <v-btn :to="product.route" class="mr-6">作品のポイント</v-btn>
+              <v-btn class="mr-6" elevation="2" :href="product.url" target="_blank">このサイトへ行く</v-btn>
+              <v-btn :to="product.route" class="mr-6">作品の詳細</v-btn>
               <v-btn elevation="2" :href="product.github" target="_blank">GitHub</v-btn>
 
             </v-card-text>
@@ -40,7 +40,6 @@ export default {
   name: 'ProductCard',
   data() {
     return {
-      dialog: false,
     }
   },
   props: [
