@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="pa-0">
       <router-view class="pa-16" />
       <router-view name="about" class="pa-16" />
       <router-view name="skills" class="pa-16" />

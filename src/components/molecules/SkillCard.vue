@@ -3,7 +3,7 @@
         <v-row justify="center">
             <div v-for="skill in skills" :key="skill.id">
                 <v-col cols=12>
-                    <v-card elevation="2" shaped max-width="500">
+                    <v-card elevation="2" shaped width="500">
                         <v-card-title>
                             {{ skill.title }}
                             <v-spacer></v-spacer>

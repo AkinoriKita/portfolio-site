@@ -3,8 +3,11 @@ import VueRouter from 'vue-router'
 import HomeHeader from '@/components/organisms/HomeHeader.vue'
 import HomeAbout from '@/components/organisms/HomeAbout.vue'
 import HomeSkills from '@/components/organisms/HomeSkills.vue'
-import HomeProducts from '@/components/organisms/HomeProducts.vue'
+import HomeProducts from '@/components/organisms/HomeWorks.vue'
 import HomeFooter from '@/components/organisms/HomeFooter.vue'
+import WorksShop from '@/components/organisms/WorksShop.vue'
+import WorksCafe from '@/components/organisms/WorksCafe.vue'
+import WorksPortfolio from '@/components/organisms/WorksPortfolio.vue'
 
 Vue.use(VueRouter)
 
@@ -27,7 +30,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+  },
+  {
+    path: '/shop',
+    name: 'shop',
+    component: WorksShop
+  },
+  {
+    path: '/cafe',
+    name: 'cafe',
+    component: WorksCafe
+  },
+  {
+    path: '/portfolio',
+    name: 'portfolio',
+    component: WorksPortfolio
+  },
 ]
 
 const router = new VueRouter({
