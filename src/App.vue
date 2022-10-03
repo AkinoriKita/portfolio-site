@@ -3,7 +3,7 @@
     <v-main>
       <router-view class="pa-16" />
       <router-view name="about" class="pa-16" />
-      <!-- <router-view name="skills" class="pa-16" /> -->
+      <router-view name="skills" class="pa-16" />
       <router-view name="products" class="pa-16" />
       <router-view name="footer" />
     </v-main>

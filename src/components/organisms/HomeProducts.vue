@@ -26,7 +26,10 @@ export default {
             'MySQL'
           ],
           period: '約2週間',
-          github: 'https://github.com/AkinoriKita/laravel_ec'
+          github: 'https://github.com/AkinoriKita/laravel_ec',
+          modalTitle: '',
+          modalImage: '',
+          modalText: '',
         },
         {
           id: 2,
@@ -43,7 +46,10 @@ export default {
             'MySQL'
           ],
           period: '約1週間',
-          github: 'https://github.com/AkinoriKita/cafe'
+          github: 'https://github.com/AkinoriKita/cafe',
+          modalTitle: '架空のカフェのコーポレートサイトです。フォームにてPHPでのDB接続を行っています。',
+          modalImage: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
+          modalText: '架空のカフェのコーポレートサイトです。フォームにてPHPでのDB接続を行っています。',
         },
         {
           id: 3,
@@ -55,8 +61,11 @@ export default {
             'Vue2',
             'Vuetify'
           ],
-          period: '約3日',
-          github: 'https://github.com/AkinoriKita/portfolio-site'
+          period: '約2日',
+          github: 'https://github.com/AkinoriKita/portfolio-site',
+          modalTitle: '',
+          modalImage: '',
+          modalText: '',
         },
       ]
     }
