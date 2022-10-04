@@ -3,7 +3,7 @@
     <v-row justify="center">
       <div v-for="product in products" :key="product.id">
         <v-col cols=12>
-          <v-card elevation="2" max-width="500">
+          <v-card elevation="2" :width="width">
             <a :href="product.url">
               <v-img height="250" :src="product.img"></v-img>
             </a>
@@ -45,6 +45,14 @@ export default {
   props: [
     'products'
   ],
+  computed: {
+    width() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 300
+        default: return 500
+      }
+    },
+  }
 }
 </script>
 
