@@ -6,7 +6,7 @@
           <v-row justify="center" align-content="center" class="text-center">
             <v-col cols=12 sm=10 md=8 lg=6>
               <p class="text-h3">ECサイト</p>
-              <v-carousel class="mt-16" cycle height="300" hide-delimiter-background show-arrows-on-hover>
+              <v-carousel class="mt-16" cycle :height="height" hide-delimiter-background show-arrows-on-hover>
                 <v-carousel-item v-for="(img, i) in imgs" :key="i">
                   <v-img :src="img"></v-img>
                 </v-carousel-item>
@@ -42,9 +42,9 @@
                 </li>
               </ul>
               <div class="mt-16">
-                <v-btn class="mr-6 white--text" elevation="2" href="https://laravelec.kitaakinori.com/" target="_blank"
+                <v-btn class="mr-6 mb-4 white--text" elevation="2" href="https://laravelec.kitaakinori.com/" target="_blank"
                   color="#737676" x-large>このサイトへ行く</v-btn>
-                <v-btn class="mr-6" elevation="2" to="/app" x-large>戻る</v-btn>
+                <v-btn class="mr-6 mb-4" elevation="2" to="/app" x-large>戻る</v-btn>
               </div>
             </v-col>
           </v-row>
@@ -66,6 +66,18 @@ export default {
       ],
     }
   },
+  computed: {
+    height() {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 130
+        case 'sm': return 250
+        case 'md': return 300
+        case 'lg': return 300
+        case 'xl': return 500
+        default: return 500
+      }
+    },
+  }
 }
 </script>
 

@@ -16,9 +16,9 @@
               {{ product.period }}
             </v-card-text>
             <v-card-text>
-              <v-btn class="mr-6" elevation="2" :href="product.url" target="_blank">このサイトへ行く</v-btn>
-              <v-btn :to="product.route" class="mr-6">作品の詳細</v-btn>
-              <v-btn elevation="2" :href="product.github" target="_blank">GitHub</v-btn>
+              <v-btn class="mr-6 mb-2" elevation="2" :href="product.url" target="_blank">このサイトへ行く</v-btn>
+              <v-btn class="mr-6 mb-2" :to="product.route">作品の詳細</v-btn>
+              <v-btn class="mb-2" elevation="2" :href="product.github" target="_blank">GitHub</v-btn>
 
             </v-card-text>
             <v-card-text>

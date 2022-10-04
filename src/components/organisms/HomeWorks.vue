@@ -18,7 +18,7 @@ export default {
         {
           id: 1,
           title: 'ECサイト',
-          img: require('@/assets/laravelec.jpg'),
+          img: require('@/assets/ec/usertop.png'),
           description: 'ユーザ側と管理者側のマルチログイン機能付きECサイトです。',
           url: 'https://laravelec.kitaakinori.com/',
           langs: [
@@ -52,7 +52,7 @@ export default {
         {
           id: 3,
           title: 'ポートフォリオサイト',
-          img: require('@/assets/portfolio.jpg'),
+          img: require('@/assets/portfolio/top.png'),
           description: '当ポートフォリオサイトです。',
           url: 'https://kitaakinori.com/',
           langs: [

@@ -53,12 +53,20 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  scrollBehavior () {
-    return new Promise((resolve, ) => {
-      setTimeout(() => {
-        resolve({ x: 0, y: 0 })
-      }, 500)
-    })
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(savedPosition)
+        }, 500)
+      })
+    } else {
+      return new Promise((resolve) => {
+            setTimeout(() => {
+              resolve({ x: 0, y: 0 })
+            }, 500)
+          })
+    }
   },
   mode: 'history',
   base: process.env.BASE_URL,
