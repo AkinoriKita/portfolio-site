@@ -4,7 +4,7 @@
       <div v-for="product in products" :key="product.id">
         <v-col cols=12>
           <v-card elevation="2" :width="width">
-            <a :href="product.url">
+            <a :href="product.url" target="_blank">
               <v-img height="250" :src="product.img"></v-img>
             </a>
             <v-card-title>{{ product.title }}</v-card-title>
