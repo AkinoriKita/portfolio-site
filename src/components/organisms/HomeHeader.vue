@@ -1,20 +1,21 @@
 <template>
   <div class="b-color">
-    <v-app-bar app color="elevation-0" class="transparent pa-10">
+    <v-app-bar app dense color="elevation-0" class="transparent pa-10">
       <v-toolbar-title>KITA AKINORI Portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
-      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon> -->
-    </v-app-bar>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-    <!-- <v-navigation-drawer v-model="drawer" absolute right floating>
-      <v-list>
-        <v-list-item-group>
-          <v-list-item><a href="#">About</a></v-list-item>
-          <v-list-item><a href="#">Skills</a></v-list-item>
-          <v-list-item><a href="#">WORKS</a></v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer> -->
+      <v-navigation-drawer v-model="drawer" fixed floating hide-overlay right color="elevation-0"
+        class="transparent mt-16 ml-16" height="max" width="120">
+        <v-list class="mt-8">
+          <v-list-item-group>
+            <v-list-item @click="drawer = !drawer" v-scroll-to="'#about'">ABOUT</v-list-item>
+            <v-list-item @click="drawer = !drawer" v-scroll-to="'#skills'">SKILLS</v-list-item>
+            <v-list-item @click="drawer = !drawer" v-scroll-to="'#works'">WORKS</v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-navigation-drawer>
+    </v-app-bar>
 
     <v-container>
       <v-row justify="center" align-content="center" class="text-center mt-16 mb-16">
@@ -40,6 +41,6 @@ export default {
 }
 
 .transparent {
-   background-color: transparent!important;
- }
+  background-color: transparent !important;
+}
 </style>

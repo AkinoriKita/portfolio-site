@@ -1,5 +1,5 @@
 <template>
-  <div class="b-color">
+  <div class="b-color" id="about">
     <v-container class="mt-16 mb-16">
       <v-row justify="center" align-content="center" class="text-center">
         <v-col cols=12 sm=10 md=8 lg=6>

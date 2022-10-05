@@ -42,9 +42,9 @@
                 </li>
               </ul>
               <div class="mt-16">
-                <v-btn class="mr-6 mb-4 white--text" elevation="2" href="https://laravelec.kitaakinori.com/" target="_blank"
-                  color="#737676" x-large>このサイトへ行く</v-btn>
-                <v-btn class="mr-6 mb-4" elevation="2" to="/app" x-large>戻る</v-btn>
+                <v-btn class="mr-6 mb-4 white--text" elevation="2" href="https://laravelec.kitaakinori.com/"
+                  target="_blank" color="#737676" x-large>このサイトへ行く</v-btn>
+                <v-btn class="mr-6 mb-4" elevation="2" @click="$router.back()" x-large>戻る</v-btn>
               </div>
             </v-col>
           </v-row>

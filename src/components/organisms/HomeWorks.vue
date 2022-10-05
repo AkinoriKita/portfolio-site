@@ -1,5 +1,5 @@
 <template>
-  <div class="b-color">
+  <div class="b-color" id="works">
     <v-container class="mt-16 mb-16">
       <p class="text-h3 text-center">WORKS</p>
       <p class="text-h6 text-center mb-16">制作したもの</p>
@@ -29,7 +29,7 @@ export default {
           period: '約2週間',
           github: 'https://github.com/AkinoriKita/laravel_ec',
           route: 'shop',
-       
+
         },
         {
           id: 2,

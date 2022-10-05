@@ -53,7 +53,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return new Promise((resolve) => {
         setTimeout(() => {
@@ -62,10 +62,10 @@ const router = new VueRouter({
       })
     } else {
       return new Promise((resolve) => {
-            setTimeout(() => {
-              resolve({ x: 0, y: 0 })
-            }, 500)
-          })
+        setTimeout(() => {
+          resolve({ x: 0, y: 0 })
+        }, 500)
+      })
     }
   },
   mode: 'history',

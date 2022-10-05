@@ -1,9 +1,9 @@
 <template>
-  <div class="b-color">
+  <div class="b-color" id="skills">
     <v-container class="mt-16 mb-16">
       <v-row justify="center">
         <v-col cols=12 sm=10 md=8 lg=4 xl=3>
-          <p class="text-h3 text-center">SKILL</p>
+          <p class="text-h3 text-center">SKILLS</p>
           <p class="text-h6 text-center mb-16">できること</p>
         </v-col>
         <skill-card :skills="skills"></skill-card>

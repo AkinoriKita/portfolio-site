@@ -31,15 +31,15 @@
                 <li class="mt-16">作ってみての感想
                   <p class="mt-8">
                     以前にLaravelを使ったWebアプリ制作をしていたので、Laravelと似ている部分があり思ったよりもスムーズにVueの仕組みを理解できました。<br>
-                    VueRouterでアニメーション付きのページ遷移をさせているが、ぎこちないところがあるので手直ししていきたいと思います。<br>
-                    Vuetifyを使うことで短時間でWebサイトを制作できました。
+                    VueRouterでのページ遷移に、うまくいっていないところがあるので手直ししていきたいと思います。<br>
+                    Vuetifyを使うことで短期間でWebサイトを制作できました。
                   </p>
                 </li>
               </ul>
               <div class="mt-16">
                 <v-btn class="mr-6 mb-4 white--text" elevation="2" href="https://kitaakinori.com/" target="_blank"
                   color="#737676" x-large>このサイトへ行く</v-btn>
-                <v-btn class="mr-6 mb-4" elevation="2" to="/app" x-large>戻る</v-btn>
+                <v-btn class="mr-6 mb-4" elevation="2" @click="$router.back()" x-large>戻る</v-btn>
               </div>
             </v-col>
           </v-row>
