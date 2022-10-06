@@ -33,7 +33,7 @@ export default {
         },
         {
           id: 2,
-          title: '架空のCafeサイト',
+          title: 'Cafeサイト',
           img: require('@/assets/cafe/top.png'),
           description: '架空のカフェのコーポレートサイトです。',
           url: 'https://cafe.kitaakinori.com/',
