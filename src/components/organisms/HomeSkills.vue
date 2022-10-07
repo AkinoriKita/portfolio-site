@@ -47,16 +47,22 @@ export default {
             'mdi-language-php',
             'mdi-laravel'
           ],
-          description: '基本的な関数の使用、フォーム作成、DB接続、外部APIの呼び出し等ができます。',
+          description: '関数の使用、フォーム作成、DB接続、外部APIの呼び出し等ができます。',
         },
         {
           id: 5,
+          title: 'MySQL',
+          icon: ['mdi-database-search'],
+          description: 'テーブル作成やリレーションなどのデータベース操作、SQL文の記入ができます。',
+        },
+        {
+          id: 6,
           title: 'WordPress',
           icon: ['mdi-wordpress'],
           description: '以前ブログ運営を通して得た知識や訓練校での制作経験があります。Webページの作成、編集ができます。',
         },
         {
-          id: 6,
+          id: 7,
           title: 'SEO',
           icon: ['mdi-magnify'],
           description: '以前クラウドソーシングサイトでライティングをしていた経験やブログ運営の経験があるため、SEOの基礎的な知識があります。',
