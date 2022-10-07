@@ -26,7 +26,7 @@ Laravel8のJetStreamを使って、ユーザーと管理者がそれぞれ登録
 
 ・ユーザーと管理者のログイン情報は、それぞれ下記となります。
 
-メールアドレス: test@test.com<br>
+メールアドレス: test@test.com
 パスワード: password
 
 ・Stripeの決済テスト用クレジットカード情報は、下記となります。
